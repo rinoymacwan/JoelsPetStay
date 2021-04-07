@@ -7,7 +7,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LeftComponent } from './left/left.component';
 import { RightComponent } from './right/right.component';
-import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
 import { AmenitiesComponent } from './amenities/amenities.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
@@ -20,7 +19,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     FooterComponent,
     LeftComponent,
     RightComponent,
-    MainComponent,
     HomeComponent,
     AmenitiesComponent,
     TestimonialsComponent,
