@@ -34,19 +34,13 @@ app-header {
   }
   
   app-privacy-policy,
-  app-main,app-home, app-testimonials, app-contact-us {
+  app-main,app-home, app-testimonials, app-amenities, app-contact-us {
     grid-area: content;
     padding: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 0;
     padding-bottom: 50px;
 
-  }
-  app-amenities{
-    grid-area: content;
-    padding: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 0;
   }
   app-right {
     grid-area: right;
