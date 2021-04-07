@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgba(191,222,206,255);
+
+}
+
+.container-fluid {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto 1fr auto;
+    /* grid-gap: 12px; */
+    grid-template-areas:
+    "header header header"
+    "left content right"
+    "footer footer footer";
+    height: 100vh;
+    padding: 0;
+
+  }
+
+app-header {
+    color: white;
+    font-size: 14px;
+    grid-area: header;
+    text-align: center;
+    background-color: #FA7D44;
+  }
+  
+  app-left {
+    grid-area: left;
+  }
+  
+  app-privacy-policy,
+  app-main,app-home,app-amenities, app-testimonials, app-contact-us {
+    grid-area: content;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0;
+    padding-bottom: 50px;
+
+  }
+  app-right {
+    grid-area: right;
+  }
+  
+  app-footer {
+    grid-area: footer;
+    background-color:#2BB961;
+    text-align: center;
+  }
+
+  ul li {
+  }
+  ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+
+  @media (max-width: 991px) {
+    app-left, 
+    app-right {
+      margin: 0;
+    }
+
+    .container-fluid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "left"
+        "content"
+        "right"
+        "footer";
+      grid-template-rows:auto 0 1fr 0 auto;
+    }
+}
